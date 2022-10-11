@@ -1,0 +1,80 @@
+.wrapper{
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.course.widget{
+    padding: 0;
+    overflow: hidden;
+}
+.course{
+    position: relative;
+}
+
+.course .top{
+    position: relative;
+    height: 200px;
+}
+
+.course .top img.cover{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.course .top img.user{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border: 2px solid white;
+}
+
+.course .center{
+    padding: 20px;
+}
+
+.course .center h4{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+.course .center p{
+    color: gray;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.course .btnContainer{
+    text-align: center;
+    position: relative;
+}
+
+.course button{
+    position: relative;
+    z-index: 2;
+}
+
+.course .btnContainer::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.5px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+}
+
+.course .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 0;
+}
+.course .bottom span{
+    font-size: 13px;
+    color: gray;
+}

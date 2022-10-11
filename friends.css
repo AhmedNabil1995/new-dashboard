@@ -1,0 +1,83 @@
+.wrapper{
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+}
+.friend{
+    position: relative;
+}
+.friend  .overtop{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    gap: 5px;
+}
+
+.friend  .overtop i{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #eee;
+    color: gray;
+    font-size: 13px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.friend  .overtop i:hover{
+    background-color: blue;
+    color: white;
+}
+
+.friend .top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.friend .top img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.friend .top span.name{
+    font-weight: 500;
+}
+
+.friend .top span.job{
+    color: gray;
+    font-size: 14px;
+}
+
+.friend .center{
+    margin: 10px 0;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.friend .center span{
+    display: block;
+    margin-bottom: 5px;
+    font-size: 15px;
+}
+
+.friend .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.friend .bottom span{
+    font-size: 13px;
+    color: gray;
+}
+
+.friend .bottom button{
+    font-size: 13px;
+    cursor: pointer;
+}

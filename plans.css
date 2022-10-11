@@ -1,0 +1,58 @@
+.wrapper{
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+}
+
+.plan .top{
+    text-align: center;
+    padding: 20px;
+    outline-style: solid;
+    outline-width: 3px;
+    outline-offset: 3px;
+    margin-bottom: 10px;
+}
+
+.plan .top span{
+    display: block;
+    font-size: 24px;
+}
+
+.plan li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.plan li{
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.plan .left{
+    display: flex;
+    align-items: center;
+}
+
+.plan li i.yes{
+    color: green;
+    font-size: 16px;
+}
+
+.plan li i.no{
+    color: red;
+    font-size: 16px;
+}
+
+.plan li span{
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.plan .right i{
+    font-size: 16px;
+    color: gray;
+}
+
+.plan p{
+    color: gray;
+    text-align: center;
+}

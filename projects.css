@@ -1,0 +1,77 @@
+.project{
+    position: relative;
+}
+
+.project .date{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    color: gray;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.project p{
+    margin: 0;   
+}
+
+.project p.desc{
+    color: gray;
+    margin-bottom: 40px;
+}
+
+.project .images img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    position: relative;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.project .images img:not(:first-child){
+    margin-left: -20px;
+}
+
+.project .images img:hover{
+    z-index: 2;
+}
+
+.project .center{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    margin: 15px 0;
+}
+
+.project .center span{
+    background-color: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.project .bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project .bottom .progress{
+    height: 10px;
+    width: 50%;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.project .bottom span{
+    font-size: 14px;
+    color: gray;
+}
